@@ -1,0 +1,7 @@
+Board: Raspberry Pi (any version with GPIO and camera support)
+
+Camera: USB or Pi Camera Module (connected via CSI or USB)
+
+Motor: Stepper motor (e.g., 28BYJ-48 or NEMA 17)
+
+Motor Driver: ULN2003 or A4988 (depending on motor type)
