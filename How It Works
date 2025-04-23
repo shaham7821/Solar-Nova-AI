@@ -1,0 +1,15 @@
+The core of Solar Nova AI lies in a smart loop that combines real-time camera input with a deep learning model to detect dirt and activate cleaning:
+
+Live Frame Capture: Uses OpenCV to stream video from a connected camera.
+
+Preprocessing: Each frame is resized to 224x224, converted to an array, and normalized using preprocess_input for MobileNetV2.
+
+Prediction with TFLite: The frame is passed to a TensorFlow Lite model trained to classify the panel as either "clean" or "dirt".
+
+Threshold Logic: If the prediction confidence for "dirt" is greater than 90%, the system triggers the cleaning mechanism.
+
+Motor Control: A stepper motor connected via GPIO rotates the cleaning brush forward and back, managed by the rotate() and clean() functions.
+
+Safety Exit: The system displays the camera feed and can be safely stopped by pressing 'q' on the keyboard.
+
+This smart automation makes the solar panel maintenance process completely autonomous and efficient.
