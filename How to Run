@@ -1,0 +1,8 @@
+1. Fine-Tune (Optional)
+Use fine_tuning/Solar Nova AI - FineTuneCode.py to train or tweak the model.
+
+2. Deploy
+Upload the .tflite model to your Raspberry Pi and run the cleaning system using:
+
+python deployment/Solar Nova AI - SystemWorkingCode.py
+Ensure your camera is connected and the motor pins are wired correctly.
